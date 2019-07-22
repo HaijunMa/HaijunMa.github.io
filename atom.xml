@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/HaijunMa/"/>
-  <updated>2019-07-22T07:39:55.816Z</updated>
+  <updated>2018-12-23T09:09:54.860Z</updated>
   <id>https://github.com/HaijunMa/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://github.com/HaijunMa/2019/07/22/%E7%A9%B7%E4%B8%BE%E6%B3%95/"/>
+    <id>https://github.com/HaijunMa/2019/07/22/穷举法/</id>
+    <published>2019-07-22T11:24:50.642Z</published>
+    <updated>2018-12-23T09:09:54.860Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Python-穷举算法（Exhaustive-Attack-method）"><a href="#Python-穷举算法（Exhaustive-Attack-method）" class="headerlink" title="#Python 穷举算法（Exhaustive Attack method）"></a>#Python 穷举算法（Exhaustive Attack method）</h2><ul><li>穷举算法又称列举法，其基本思想是逐一列举问题所涉及的所有情况。</li><li>穷举法常用于解决“是否存在”和“有多少种可能”的问题。</li><li>应用穷举法时应注意对问题所涉及的有限种情形须—列举，既不能重复，又不能遗漏。</li><li>穷举法常应用循环结构体来实现。</li><li>理论上，穷举法可以解决可计算领域中的各种问题。尤其是在计算机速度非常高的今天，穷举的应用领域非常广阔。</li><li>在实际应用中，通常要解决的问题规模不大，用穷举设计的算法其运算速度是可以接受的。此时，设计一个更高效的算法代价不值得。</li></ul><h3 id="百鸡百钱问题"><a href="#百鸡百钱问题" class="headerlink" title="百鸡百钱问题"></a>百鸡百钱问题</h3><hr><p>已知：公鸡5元一只，母鸡3元一只，小鸡一元3只。现用100元钱买了100只鸡。<br>问：公鸡母鸡小鸡各几只？</p><pre><code># -*- coding: utf-8 -*-&apos;&apos;&apos;Title: The question of &apos;Hundreds of chickens&apos;&apos;&apos;&apos;for i in range(100):    for j in range(100):        for k in range(100):            number = i + j +k            price = i*5 + j*3 + k*(1/3)            if (number &lt;= 100) &amp; (price &lt;= 100) &amp; (k % 3 == 0):                print(&quot;There are %dck, %d hen,and %d chick&quot; % (i,j,k))</code></pre><h3 id="数学问题"><a href="#数学问题" class="headerlink" title="数学问题"></a>数学问题</h3><hr><p>有i,j,k,m,n五个字母分别代表0~9的数字，满足下面条件：  </p><pre><code>i  j  k  m  n  *              i   --------------------n  n  n  n  n  n  </code></pre><p>求i,j,k,m,n的实际值</p><pre><code># -*- coding: utf-8 -*-&apos;&apos;&apos;Title: The question of math&apos;&apos;&apos;for i in range(1,10):    for j in range(10):        for k in range(10):            for m in range(10):                for n in range(10):                    num = 10000*i + 1000*j + 100*k +10*m + n                       c = n*111111                    if  num*i == c:                        print(i,j,k,m,n)</code></pre><h3 id="鸡兔同笼问题"><a href="#鸡兔同笼问题" class="headerlink" title="鸡兔同笼问题"></a>鸡兔同笼问题</h3><hr><p>鸡兔同笼问题最早记载于1500年前的《孙子兵法》，这是一个非常有名的问题。鸡兔同笼的原文如下：</p><pre><code>今有鸡兔同笼，上有三十五头，下有九十四足，问鸡兔各几只？这个问题的大致意思是：在一个笼子里关着若干只鸡和若干只兔，从上面数共有35个头，从下面数共有94只脚。问笼中鸡和兔的数量各是多少？# -*- coding: utf-8 -*-&apos;&apos;&apos;Title: The question of Chicken and rabbit cage&apos;&apos;&apos;for i in range(1,35):    for j in range(1,35):        if  (i*2 + j*4) == 94 and (i + j == 35):            print(&quot;There are %d chickens,and %d rabbits&quot; % (i,j))# achieve by list comprehensionlist = [(i,j) for i in range(1,35) for j in range(1,35) if (i*2 + j*4) == 94 and i + j ==35]</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Python-穷举算法（Exhaustive-Attack-method）&quot;&gt;&lt;a href=&quot;#Python-穷举算法（Exhaustive-Attack-method）&quot; class=&quot;headerlink&quot; title=&quot;#Python 穷举算法（Exhau
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://github.com/HaijunMa/2019/07/22/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    <id>https://github.com/HaijunMa/2019/07/22/面向对象/</id>
+    <published>2019-07-22T11:24:50.637Z</published>
+    <updated>2019-01-16T09:57:51.502Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="面向对象-Object-Oriented"><a href="#面向对象-Object-Oriented" class="headerlink" title="#面向对象(Object-Oriented)"></a>#面向对象(Object-Oriented)</h2><p><em>一切事物皆对象，通过面向对象的方式，将现实世界的事物抽象成对象，现实世界中的关系抽象成类、继承，<br> 帮助人们实现对现实世界的抽象与数字建模。</em></p><h2 id="面向对象分析（Object-Oriented-Analysis，OOA）"><a href="#面向对象分析（Object-Oriented-Analysis，OOA）" class="headerlink" title="面向对象分析（Object Oriented Analysis，OOA）"></a>面向对象分析（Object Oriented Analysis，OOA）</h2><pre><code>面向对象分析的输入是用户的功能需求，输出是简单的、理性化的分析模型，此阶段的工作更多侧重于如何理解软件的功能需求  </code></pre><p><a href="https://www.jianshu.com/p/de3882d5cce5" target="_blank" rel="noopener">博客</a></p><h2 id="面向对象设计（Object-Oriented-Design，OOD）"><a href="#面向对象设计（Object-Oriented-Design，OOD）" class="headerlink" title="面向对象设计（Object Oriented Design，OOD）"></a>面向对象设计（Object Oriented Design，OOD）</h2><pre><code>面向对象设计的输入是面向对象分析的结果，蔬菜水果最终的、细化后的设计模型，此阶段的工作更多侧重于如何得到一个合适的、完整的解决方案。</code></pre><p><a href="https://juejin.im/post/5b9526c1e51d450e69731dc2" target="_blank" rel="noopener">详细教程</a></p><h2 id="面向对象编程（-Object-Oriented-Programming-OOP）"><a href="#面向对象编程（-Object-Oriented-Programming-OOP）" class="headerlink" title="面向对象编程（(Object Oriented Programming,OOP）"></a>面向对象编程（(Object Oriented Programming,OOP）</h2><pre><code>是把这个完美定义的设计转化成一个可以工作的程序的过程，这个程序恰好做了CEO最初要求做的事情</code></pre><p><a href="https://coolshell.cn/articles/8745.html" target="_blank" rel="noopener">博客</a></p><hr><pre><code>   如果这个世界符合我们的想象，并且就像旧教科书告诉我们的那样，可以井井有条地一步一步遵循这些阶段，那就太美好了。通常，现实世界需要残酷的多。不管我们多么努力的区分这些阶段，我们总会发现在我们准备设计的时候，事情还需要进一步分析。当我们开始编程的时候，发现在设计中，一些特性需要澄清。在这个快节奏的现代世界，大部分开发刚好是一个__迭代式开发模型__。在这个迭代式开发中，会先模块化、设计和编程实现任务中的一个小部分，然后评估这个程序并且通过扩展来改善每一个特性，包括在一系列短的周期里增加的新的特性。</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;面向对象-Object-Oriented&quot;&gt;&lt;a href=&quot;#面向对象-Object-Oriented&quot; class=&quot;headerlink&quot; title=&quot;#面向对象(Object-Oriented)&quot;&gt;&lt;/a&gt;#面向对象(Object-Oriented)&lt;/
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
